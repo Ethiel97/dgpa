@@ -1,84 +1,102 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 import Image from 'next/image'
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div>
+      <div className="relative lg:absolute h-128 w-full lg:w-1/2 mt-6 px-4">
+        <img className="lg:absolute left-0 top-0 lg:-ml-48 w-full h-96 lg:h-128 2xl:h-144 object-cover" src="https://backlog.digitalpublicgoods.net/assets/img/logo.jpg" alt="" />
+      </div>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
+      {/* Header */}
+      <div className="container px-4 mx-auto pt-12 lg:pt-16">
+        <div className="flex flex-wrap -mx-4 mb-24 lg:mb-32 2xl:mb-40">
+          <div className="w-full lg:w-1/2 lg:ml-auto px-4">
+            <span className="text-lg text-blue-500 font-bold">Building for everyone</span>
+            <h2 className=" my-8 lg:my-12 text-6xl 2xl:text-7xl font-bold font-heading">Digital Public Goods Backlog</h2>
+            <p className="mb-20 2xl:mb-24 text-gray-400 text-xl">Promoting digital public goods to create a more equitable world.</p>
 
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and its API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            <Link href='/submit'>
+              <span className="px-12 py-6 bg-blue-500 hover:bg-blue-600 rounded-full text-lg text-white font-bold transition duration-200">Submit your project</span>
+            </Link>
+          </div>
         </div>
-      </main>
 
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
+      </div>
+
+
+
+      {/* How it works      <section className="py-20 2xl:py-40 overflow-hidden"> */}
+      <div className="container px-4 mx-auto">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex flex-wrap items-center -mx-5">
+            <div className="w-full lg:w-1/2 px-5 mb-20 lg:mb-0">
+              <div className="max-w-md">
+                <span className="text-lg font-bold text-blue-500">How it works</span>
+                <h2 className="mt-12 mb-10 text-6xl font-bold font-heading">Willing to contribute to public goods</h2>
+                <p className="mb-16 text-xl text-gray-500">It's simple and free</p>
+                <a className="inline-block px-12 py-5 text-white font-bold bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200" href="#">How it works?</a>
+              </div>
+            </div>
+            <div className="w-full lg:w-1/2 px-5">
+              <ul>
+                <li className="flex pb-10 mb-8 border-b border-gray-50">
+                  <div className="mr-8">
+                    <span className="flex justify-center items-center w-14 h-14 bg-blue-50 text-lg font-bold rounded-full">1</span>
+                  </div>
+                  <div className="max-w-xs">
+                    <h3 className="mb-6 text-lg font-bold font-heading">Submit your project</h3>
+                    <p className="text-lg">You have a project that can contribute to digital public goods? Submit it.</p>
+                  </div>
+                </li>
+                <li className="flex pb-10 mb-8 border-b border-gray-50">
+                  <div className="mr-8">
+                    <span className="flex justify-center items-center w-14 h-14 bg-blue-50 text-lg font-bold rounded-full">2</span>
+                  </div>
+                  <div className="max-w-xs">
+                    <h3 className="mb-6 text-lg font-bold font-heading">Review process</h3>
+                    <p className="text-lg">We will review your submission with our team.</p>
+                  </div>
+                </li>
+                <li className="flex pb-10 border-b border-gray-50">
+                  <div className="mr-8">
+                    <span className="flex justify-center items-center w-14 h-14 bg-blue-50 text-lg font-bold rounded-full">3</span>
+                  </div>
+                  <div className="max-w-xs">
+                    <h3 className="mb-6 text-lg font-bold font-heading">Feedback</h3>
+                    <p className="text-lg">After review we'll get back to you and showcase it here if it's a good fit for us.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      {/*cta  submit your project now */}
+
+
+      <section className="relative py-20 2xl:py-40 overflow-hidden">
+        <img className="lg:absolute bottom-0 left-0 mx-auto h-80 w-[384px] lg:w-auto lg:h-112 2xl:h-144 object-cover" style={{ width: 384 }}
+          src="https://images.pexels.com/photos/5999935/pexels-photo-5999935.jpeg?q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=630;w=384" alt="" />
+        <img className="hidden lg:block absolute bottom-0 right-0 h-64 2xl:h-96 object-cover"
+          src="https://images.pexels.com/photos/5325762/pexels-photo-5325762.jpeg?q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=650" alt="" />
+        <div className="container px-4 mx-auto pt-20">
+          <div className="max-w-lg 2xl:max-w-3xl mx-auto text-center">
+            <h2 className="my-8 text-6xl 2xl:text-7xl font-bold font-heading">Excited to see your contribution.</h2>
+            <p className="mb-14 text-lg text-gray-500">Contribute with your project.</p>
+
+            <Link href="/submit">
+              <span className="inline-block py-4 px-12 text-white font-bold bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200">Submit your project</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
     </div>
   )
 }
