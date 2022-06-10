@@ -21,7 +21,7 @@ const Projects: NextPage = ({ projects }) => {
                                 return (
                                     <div className="w-full md:w-1/2 lg:w-1/4 p-5" key={project.id}>
                                         <div className="relative h-52">
-                                            <a href="">
+                                            <a href="#">
                                                 <img className="w-full h-full object-cover object-top" src={project.previewImage} alt="" />
                                             </a>
                                             <div className="absolute bottom-0 left-0 ml-8 mb-6 px-3 pb-3 pt-1 inline-block bg-white rounded-b-2xl border-t-4 border-blue-500">

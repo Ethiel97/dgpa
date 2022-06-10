@@ -15,8 +15,8 @@ const Submit: NextPage = () => {
 
 
     //write function to submit the form to the server by calling the API to create a new project
-    async function submitForm() {
-        // e.preventDefault();
+    async function submitForm(e) {
+        e.preventDefault();
         const data = {
             title,
             description,
@@ -77,7 +77,7 @@ const Submit: NextPage = () => {
                                         </div>
 
 
-                                        <button onClick={submitForm} className="py-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-full transition duration-200">Submit</button>
+                                        <button  onClick={ (e) => submitForm(e)} className="py-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-full transition duration-200">Submit</button>
                                     </form>
                                 </div>
                             </div>

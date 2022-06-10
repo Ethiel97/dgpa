@@ -11,7 +11,7 @@ const Navbar = () => {
                 <div className="flex py-8 px-4 lg:px-8 justify-between items-center">
 
                     <Link href='/'>
-                        <span className="text-2xl text-gray-900 font-bold" href="/">
+                        <span className="text-2xl text-gray-900 font-bold">
                             DGPA
                         </span>
                     </Link>
@@ -53,11 +53,10 @@ const Navbar = () => {
                         </div>
                         <div className="mt-auto px-10">
                             <div className="pt-6">
-                                <Link className="block mb-4 py-4 px-12 text-white text-center font-bold hover:bg-white hover:text-gray-800 border border-gray-50 rounded-full transition duration-200" href="#">Sign in</Link>
 
                                 <Link href='/submit'>
                                     <span className="block py-4 px-12 text-white text-center font-bold bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200">
-                                        Sign up
+                                        Submit your project
                                     </span>
                                 </Link>
 
